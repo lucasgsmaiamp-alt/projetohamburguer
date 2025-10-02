@@ -1,7 +1,7 @@
 {
 	"name": "hamburg",
 	"compatibility_date": "2025-10-01",
-	"bucket": "./dist",
+	"pages_build_output_dir": "./dist",
 	"entry-point": "functions",
 	"observability": {
 		"enabled": true

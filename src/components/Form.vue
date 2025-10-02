@@ -53,18 +53,18 @@
     import Message from './Message.vue';
     export default {
         name: 'Form',
-        data(){
-            return{
-                paes: null,
-                carnes: null,
-                queijos: null,
-                opcionaisdata: null,
-                nome: null,
-                pao: null,
-                carne: null,
-                queijo: null,
+        data() {
+            return {
+                nome: "",
+                pao: "",
+                carne: "",
+                queijo: "",
                 opcionais: [],
-                msg: null
+                paes: [],
+                carnes: [],
+                queijos: [],
+                opcionaisdata: [],
+                msg: ""
             }
         },
         methods: {
