@@ -17,8 +17,19 @@ export async function onRequestPatch({ request, params }) {
 }
 
 export async function onRequestDelete({ params }) {
-  const index = burgers.findIndex(b => b.id === params.id)
-  if (index === -1) return new Response(JSON.stringify({ error: "Not found" }), { status: 404 })
+  const { id } = params // pega o id corretamente
+  if (!id) {
+    return new Response(JSON.stringify({ error: "ID não fornecido" }), { status: 400 })
+  }
+
+  const index = burgers.findIndex(b => b.id === id)
+  if (index === -1) {
+    return new Response(JSON.stringify({ error: "Pedido não encontrado" }), { status: 404 })
+  }
+
   const deleted = burgers.splice(index, 1)[0]
-  return new Response(JSON.stringify(deleted), { headers: { "Content-Type": "application/json" } })
+
+  return new Response(JSON.stringify(deleted), {
+    headers: { "Content-Type": "application/json" }
+  })
 }
