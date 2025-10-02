@@ -1,0 +1,123 @@
+{
+  "ingredientes": {
+    "paes": [
+      {
+        "id": 1,
+        "tipo": "Italiano Branco"
+      },
+      {
+        "id": 2,
+        "tipo": "3 Queijos"
+      },
+      {
+        "id": 3,
+        "tipo": "Parmesão e Orégano"
+      },
+      {
+        "id": 4,
+        "tipo": "Integral"
+      }
+    ],
+    "carnes": [
+      {
+        "id": 1,
+        "tipo": "Maminha"
+      },
+      {
+        "id": 2,
+        "tipo": "Alcatra"
+      },
+      {
+        "id": 3,
+        "tipo": "Picanha"
+      },
+      {
+        "id": 4,
+        "tipo": "Veggie burger"
+      }
+    ],
+    "queijos": [
+      {
+        "id": 1,
+        "tipo": "Mussarela"
+      },
+      {
+        "id": 2,
+        "tipo": "Suíço"
+      },
+      {
+        "id": 3,
+        "tipo": "Prato"
+      }
+    ],
+    "opcionais": [
+      {
+        "id": 1,
+        "tipo": "Bacon"
+      },
+      {
+        "id": 2,
+        "tipo": "Cheddar"
+      },
+      {
+        "id": 3,
+        "tipo": "Salame"
+      },
+      {
+        "id": 4,
+        "tipo": "Tomate"
+      },
+      {
+        "id": 4,
+        "tipo": "Cebola roxa"
+      },
+      {
+        "id": 4,
+        "tipo": "Pepino"
+      }
+    ]
+  },
+  "status": [
+    {
+      "id": "1",
+      "tipo": "Solicitado"
+    },
+    {
+      "id": "2",
+      "tipo": "Em produção"
+    },
+    {
+      "id": "3",
+      "tipo": "Finalizado"
+    }
+  ],
+  "burgers": [
+    {
+      "id": "e7bd",
+      "nome": "Carlos",
+      "pao": "Parmesão e Orégano",
+      "carne": "Picanha",
+      "queijo": "Suíço",
+      "opcionais": [
+        "Bacon",
+        "Cheddar",
+        "Tomate",
+        "Cebola roxa"
+      ],
+      "status": "Finalizado"
+    },
+    {
+      "id": "34e2",
+      "nome": "baine",
+      "pao": "Parmesão e Orégano",
+      "carne": "Maminha",
+      "queijo": "Suíço",
+      "opcionais": [
+        "Bacon",
+        "Cheddar",
+        "Tomate"
+      ],
+      "status": "Finalizado"
+    }
+  ]
+}
