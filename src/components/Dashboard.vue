@@ -45,16 +45,12 @@ import Message from './Message.vue';
 
 export default{
     name: "Dashboard",
-    data(){
+    data() {
         return {
-            burgers: null,
-            burger_id: null,
+            burgers: [],
             status: [],
-            msg: null
+            msg: ""
         }
-    },
-    components: {
-        Message
     },
     methods: {
         async getPedidos () {
@@ -83,14 +79,14 @@ export default{
 
             this.msg = `O pedido ${res.id} de ${res.nome} foi deletado`
 
-            setTimeout(()=> this.msg= "", 3000)
+            setTimeout(() => (this.msg= ""), 3000)
 
             this.getPedidos();
         },
         async updateBurger(event, id){
             const option = event.target.value;
 
-            const dataJson = JSON.stringify({status: option });
+            const dataJson = JSON.stringify({ status: option });
 
             const req = await fetch(`/api/burgers/${id}`, {
                 method:"PATCH",
@@ -102,11 +98,14 @@ export default{
 
             this.msg = `O pedido ${res.id} está ${res.status}`
 
-            setTimeout(()=> this.msg= "", 3000)
+            setTimeout(()=> (this.msg= ""), 3000)
         }
     },
     mounted() {
         this.getPedidos();
+    },
+    components: {
+        Message
     }
 }
 </script>
