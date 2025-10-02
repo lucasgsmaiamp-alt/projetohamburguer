@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from '../../my-vue-app/node_modules/vue-router/dist/vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/views/Home.vue'
 
 const routes = [
