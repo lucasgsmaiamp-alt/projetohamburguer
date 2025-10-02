@@ -69,7 +69,7 @@
         },
         methods: {
             async getIngredientes() {
-                const req = await fetch("http://localhost:3000/ingredientes");
+                const req = await fetch("/api/ingredientes");
                 const data = await req.json();
 
                 this.paes = data.paes;
@@ -92,7 +92,7 @@
 
                 const dataJson = JSON.stringify(data)
 
-                const req = await fetch("http://localhost:3000/burgers", {
+                const req = await fetch("/api/burgers", {
                     method: "POST",
                     headers: {"Content-Type": "application/json"},
                     body: dataJson

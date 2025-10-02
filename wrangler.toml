@@ -1,0 +1,9 @@
+{
+	"name": "hamburg",
+	"compatibility_date": "2025-10-01",
+	"bucket": "./dist",
+	"entry-point": "functions",
+	"observability": {
+		"enabled": true
+	}
+}
