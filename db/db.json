@@ -107,15 +107,15 @@
       "status": "Finalizado"
     },
     {
-      "id": "34e2",
-      "nome": "baine",
-      "pao": "Parmesão e Orégano",
-      "carne": "Maminha",
-      "queijo": "Suíço",
+      "id": "eb31",
+      "nome": "Matheus",
+      "pao": "Italiano Branco",
+      "carne": "Alcatra",
+      "queijo": "Mussarela",
       "opcionais": [
         "Bacon",
         "Cheddar",
-        "Tomate"
+        "Cebola roxa"
       ],
       "status": "Finalizado"
     }
